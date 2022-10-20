@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>seance cinq de  jquery</title>
+    <meta charset='utf-8' >
+<body>
+    <h1>Gestion des evenements en jquery liees au formulaire </h1>
+ <select id='liste'>
+<option value='c1' selected='selected'>choix 1 </option>
+<option value='c2'>choix 2</option>
+</select>
+    <script src='jquery-3.6.0.js'></script>
+    <script >
+
+$(document).ready(function(){
+                $('#liste').change(function(){
+                  alert('Nouvelle option selectionnee');
+});
+});
+    </script>
+</body>
+</html>

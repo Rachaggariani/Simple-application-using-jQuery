@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>seance dix de  jquery</title>
+    <meta charset='utf-8' >
+  <style>
+    
+  </style>
+<body>
+  <h1>Les effets</h1>
+   <button id='b1'>Executer fadout() sur le titre effets  </button>
+   <button id='b2'>Executer fadIn() sur le titre effets </button> 
+  
+ <script src='jquery-3.6.0.js'></script>
+<script >
+$(document).ready(function(){
+    $('#b1').click(function(){
+        $('h1').fadeOut(2000);
+    });
+
+    $('#b2').click(function(){
+        $('h1').fadeIn(2000);
+    });     
+});
+    </script>
+</body>
+</html>

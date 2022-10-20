@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>seance huite de  jquery</title>
+    <meta charset='utf-8' >
+    <style>
+       table{
+           border-collapse: collapse;
+       }
+       th,td{
+           border:1px solid black;
+           padding:5px;
+       }
+    </style>
+<body>
+    
+<ul>
+    <li>Element n°1 de la liste </li>
+    <li>Element n°2 de la liste </li>
+    <li>Element n°3 de la liste </li>
+    <li>Element n°4 de la liste </li>
+    <li>Element n°5 de la liste </li>
+</ul>
+</ul>
+<table>
+<tr><th>Prenom</th><th>Nom</th><th>niveau</th><th>numcin</th></tr>
+<tr><td>Racha</td><td>Ghariani</td><td>2eme annee licence en informatique et multimedia </td><td>203564897</td></tr>
+<tr><td>Maria</td><td>Giraud</td><td>2eme annee preparatoire en france  </td><td>1264698756</td></tr>
+<tr><td>victor</td><td>Durant</td><td>master  genie logiciel </td><td>215647893215</td></tr>
+<tr><td>mariem</td><td>Joly</td><td>cycle d'ingenieur  </td><td>9201564789</td></tr>
+
+</table>
+    <script src='jquery-3.6.0.js'></script>
+<script >
+$(document).ready(function(){
+              $('li').not(':nth-child(even)').css('color','blue');
+              $('tr').not(':nth-child(old)').css('color','orange');
+              /* $('li').filter(':nth-child(even)').css('color','blue');
+              $('tr').filter(':nth-child(old)').css('color','orange');
+*/
+
+});
+
+    </script>
+</body>
+</html>

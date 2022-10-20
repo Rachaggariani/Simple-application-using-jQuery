@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>seance dix de  jquery</title>
+    <meta charset='utf-8' >
+  <style>
+div{
+    margin: 5px;
+    padding:5px;
+    border:1px solid purple;
+}
+
+.wrapA{border:1px solid black;
+
+}
+
+  </style>
+  
+<body>
+   <p class='towrapAll'>Premier paragraphe</p>
+   <p class='towrapAll'>Deusieme paragraphe</p>
+   <button id='b1'>Ajouter un div avec wrapAll()</button>
+   <button id='b2'>Supprimer un div avec unwrap()</button> 
+ <script src='jquery-3.6.0.js'></script>
+<script >
+$(document).ready(function(){
+    $('#b1').click(function(){
+        $('.towrapAll').wrapAll("<div class='WrapA'></div> ");
+    });
+
+    $('#b2').click(function(){
+        $('.towrapAll').unwrap();
+    });     
+});
+    </script>
+</body>
+</html>

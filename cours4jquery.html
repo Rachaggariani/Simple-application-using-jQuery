@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>seance quatre de  jquery</title>
+    <meta charset='utf-8' >
+<body>
+    <h1>Gestion des evenements en jquery liees au formulaire </h1>
+    <fieldset id='fld'>
+   <label for='prenom'>entrer votre prenom :</label>
+   <input tupe='text' id='prenom'name='prenom'>
+
+   <label for='nom'>entrer votre nom :</label>
+   <input tupe='text' id='nom'name='nom'>
+</fieldset>
+    <script src='jquery-3.6.0.js'></script>
+    <script >
+/*  
+$(document).ready(function(){
+                $('#fld').focusin(function(){
+                   $(this).css('background-color','pink');
+});
+$('#fld').focusout(function(){
+    $(this).css('background-color','blue');
+});
+});
+*/
+$(document).ready(function(){
+                $('#fld').focus(function(){
+                   $(this).css('background-color','pink');
+});
+$('#fld').blur(function(){
+    $(this).css('background-color','blue');
+});
+});
+    </script>
+</body>
+</html>

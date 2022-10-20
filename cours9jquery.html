@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>seance neuf de  jquery</title>
+    <meta charset='utf-8' >
+  
+  
+<body>
+    <p id='p1'>Premier paragraphe</p>
+    <p id='p2'>Deuxieme  paragraphe</p>
+<button id='b1'> utiliser replaceWith()</button>
+<button id='b2'> utiliser replaceAll()</button>
+
+ <script src='jquery-3.6.0.js'></script>
+<script >
+$(document).ready(function(){
+    $('#p1').click(function(){
+            $('#b1').replaceWith('<h2>Titre h2</h2>')
+
+});
+$('#b2').click(function(){
+    $('<h2>Autre titre h2</h2>').replaceAll('#p2');
+});
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>seance deux  jquery</title>
+    
+<body>
+    <h1>Gestion des evenements en jquery liees a la souris </h1>
+    <p >premiere paragraphe </p>
+    <p>deuxieme paragraphe</p>
+    <script src='jquery-3.6.0.js'></script>
+    <script >
+      //  $('p').hide();cacher le titre 
+        // cacher seulement le premier paragraphe $('.para').hide();
+    $(document).ready(function(){
+    $('p').click(function(){
+        $(this).hide();
+    });
+});
+
+    </script>
+</body>
+
+
+
+</html>

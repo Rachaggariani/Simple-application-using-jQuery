@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>seance deux  jquery</title>
+    <meta charset='utf-8' >
+<body>
+    <h1>Gestion des evenements en jquery liees au clavier  </h1>
+   <label for='prenom'>entrer votre prenom :</label>
+   <input tupe='text' id='prenom'name='prenom'>
+   <p>Dernier caractere tape : <span id='ascii'></span></p>
+    <script src='jquery-3.6.0.js'></script>
+    <script >
+   /* $(document).ready(function(){
+    $('#prenom').keydown(function(){
+        $(this).css('background-color','#69C');
+    });
+    $('#prenom').keyup(function(){
+        $(this).css('background-color','#C72')   
+     });
+});
+*/
+$(document).ready(function(){
+                $('#prenom').keypress(function(e){
+                           var  touche= string.fromCharCode(e.which);
+                               $('#ascii').text(touche);
+});
+});
+    </script>
+</body>
+</html>
